@@ -6,7 +6,7 @@ import { MessageService } from "./messages/message.service";
     template: `
        <div class="middle-box">
                     <h1>{{title}}</h1>
-                    <p>Puede dirigirse a la página principal <a [routerLink]="['/']"><b>Inicio</b></a> si ya está autenticado</p>
+                    <p>Puede dirigirse a la página <a [routerLink]="['/']"><b>principal</b></a> si ya está autenticado</p>
         </div>
     `,
     styles:[
