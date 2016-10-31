@@ -11,9 +11,8 @@ import { MessageService } from "./messages/message.service";
 })
 export class AppComponent implements OnInit{
 
-
-ngOnInit(){
-    console.log('Paso por AppComponent');
-}
+        ngOnInit(){
+            console.log('Paso por AppComponent');
+        }
 
 }

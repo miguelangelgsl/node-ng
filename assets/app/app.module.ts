@@ -17,7 +17,7 @@ import { AuthGuard } from './auth/auth-guard';
 
 //Layout
 import { NavBarComponent } from './navbar.component';
-
+import { E404Component } from './E404.component';
 
 @NgModule({
     declarations: [
@@ -25,7 +25,8 @@ import { NavBarComponent } from './navbar.component';
         AuthenticationComponent,
         ErrorComponent,
         HomeComponent,
-        NavBarComponent
+        NavBarComponent,
+        E404Component
     ],
     imports: [
         BrowserModule,
