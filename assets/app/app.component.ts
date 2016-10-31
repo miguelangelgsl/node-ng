@@ -1,12 +1,19 @@
-import { Component } from '@angular/core';
+import { Component,OnInit } from '@angular/core';
 
 import { MessageService } from "./messages/message.service";
 
 @Component({
     selector: 'my-app',
-    templateUrl: './app.component.html'
+    template: `
+    <router-outlet></router-outlet>
+            <app-error></app-error>
+    `
 })
-export class AppComponent{
+export class AppComponent implements OnInit{
 
+
+ngOnInit(){
+    console.log('Paso por AppComponent');
+}
 
 }

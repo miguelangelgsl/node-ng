@@ -18,6 +18,7 @@ import { AuthService } from "./auth.service";
             }
         .middle-box h1 {
             font-size: 120px;
+            font-family: 'Anton', sans-serif;
             text-shadow: 2px 2px #b1b0b0;
             color: rgba(55, 98, 142, 0.5);
         }

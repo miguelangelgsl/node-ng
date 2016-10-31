@@ -2,30 +2,35 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpModule } from "@angular/http";
 
+import { routing } from "./app.routing";
+
+//Main Components
 import { AppComponent } from "./app.component";
 import { AuthenticationComponent } from "./auth/authentication.component";
-import { HeaderComponent } from "./header.component";
-import { routing } from "./app.routing";
+import { HomeComponent } from './home.component';
+
+//Service Security and Guard
 import { AuthService } from "./auth/auth.service";
 import { ErrorComponent } from "./errors/error.component";
 import { ErrorService } from "./errors/error.service";
-import { MessageModule } from "./messages/message.module";
-import { NavBarComponent } from './navbar.component';
 import { AuthGuard } from './auth/auth-guard';
+
+//Layout
+import { NavBarComponent } from './navbar.component';
+
 
 @NgModule({
     declarations: [
         AppComponent,
         AuthenticationComponent,
-        HeaderComponent,
         ErrorComponent,
+        HomeComponent,
         NavBarComponent
     ],
     imports: [
         BrowserModule,
         routing,
-        HttpModule,
-        MessageModule
+        HttpModule
     ],
     providers: [AuthService, ErrorService,AuthGuard],
     bootstrap: [AppComponent]

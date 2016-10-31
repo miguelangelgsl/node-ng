@@ -4,6 +4,7 @@ import { FormGroup, FormControl, Validators } from "@angular/forms";
 import { AuthService } from "./auth.service";
 import { User } from "./user.model";
 
+
 @Component({
     selector: 'app-signup',
     templateUrl: './signup.component.html',
@@ -17,6 +18,7 @@ import { User } from "./user.model";
             }
         .middle-box h1 {
             font-size: 120px;
+            font-family: 'Anton', sans-serif;
             text-shadow: 2px 2px #787878;
             color: rgba(55, 98, 142, 0.5);
         }
